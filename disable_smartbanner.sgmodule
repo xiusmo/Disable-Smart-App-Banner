@@ -4,4 +4,4 @@
 
 [Script]
 # 插入一条 HTTP Response 脚本，负责对目标域名的 HTML 页面进行正则替换
-DisableAllBanner = type=http-response,pattern=^https?://.*,requires-body=1,script-path=disable_all_smartbanner.js
+DisableAllBanner = type=http-response,pattern=^https?://.*,requires-body=1,script-path=https://raw.githubusercontent.com/xiusmo/Disable-Smart-App-Banner/refs/heads/main/disable_smartbanner.js
