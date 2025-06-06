@@ -13,7 +13,7 @@
 
   let body = $response.body;
   // 匹配并删除 <meta name="apple-itunes-app" …> 标签
-  const metaRegex = /<meta\s+name=(?:'|")apple-itunes-app(?:'|")[^>]*>/gi;
+  const metaRegex = /<meta\b[^>]*\bname=['\"]apple-itunes-app['\"][^>]*>/gi;
   const newBody = body.replace(metaRegex, "");
   // 如果没有找到要删除的，就直接放行
   if (newBody === body) {
